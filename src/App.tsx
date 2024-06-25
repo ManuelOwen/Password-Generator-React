@@ -1,5 +1,6 @@
-import './App.css'
+
 import { useState, useEffect, useRef, useCallback } from 'react'
+import './App.scss'
 
 function App() {
   const [length, setLength] = useState<number>(8)
@@ -31,7 +32,7 @@ function App() {
   }, [length, numberAllowed, characterAllowed, symbolsAllowed, generatePassword])
 
   return (
-    <div>
+    <div className='container'>
       <h2>Password Generator</h2>
       <div className='app'>
         <div className='form'>
